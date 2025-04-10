@@ -43,7 +43,6 @@ function CountSpan() {
 
 function CountIncrement() {
 	const increment = useCounterStore((x) => x.increment);
-
 	return <button type="button" onClick={increment}>+ Increment</button>;
 }
 
