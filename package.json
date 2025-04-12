@@ -1,16 +1,27 @@
 {
 	"name": "zustand-experiments",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"preview": "vite preview"
 	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"packageManager": "pnpm@10.8.0+sha512.0e82714d1b5b43c74610193cb20734897c1d00de89d0e18420aebc5977fa13d780a9cb05734624e81ebd81cc876cd464794850641c48b9544326b5622ca29971",
+	"dependencies": {
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"react-router": "^7.5.0",
+		"react-scan": "^0.3.3",
+		"zustand": "^5.0.3"
+	},
 	"devDependencies": {
-		"dprint": "^0.49.1"
-	}
+		"@types/react": "^19.0.10",
+		"@types/react-dom": "^19.0.4",
+		"@vitejs/plugin-react-swc": "^3.8.0",
+		"dprint": "^0.49.1",
+		"typescript": "~5.7.2",
+		"vite": "^6.2.0"
+	},
+	"packageManager": "pnpm@10.8.0+sha512.0e82714d1b5b43c74610193cb20734897c1d00de89d0e18420aebc5977fa13d780a9cb05734624e81ebd81cc876cd464794850641c48b9544326b5622ca29971"
 }

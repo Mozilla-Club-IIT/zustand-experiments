@@ -1,3 +1,2 @@
-packages:
-    - "next"
-    - "vite"
+onlyBuiltDependencies:
+  - dprint
