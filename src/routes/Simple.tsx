@@ -59,18 +59,12 @@ export default function SimpleRoute() {
 		<>
 			<CountSpan />
 			<div>
-				<p style={{ maxWidth: "75ch" }}>
+				<p className="description">
 					This example showcases a simple reference implementation of how zustand internally works. Check
 					where the renders are occuring.
 				</p>
 			</div>
-			<div
-				style={{
-					display: "flex",
-					gap: "0.5rem",
-					alignSelf: "center",
-				}}
-			>
+			<div className="count-controls">
 				<CountIncrement />
 				<CountDecrement />
 			</div>
@@ -80,7 +74,7 @@ export default function SimpleRoute() {
 
 function CountSpan() {
 	const count = useCounterStore((x) => x.count);
-	return <span style={{ fontSize: "1.75em" }}>Count: {count}</span>;
+	return <span className="count-span">Count: {count}</span>;
 }
 
 function CountIncrement() {

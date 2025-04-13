@@ -17,18 +17,12 @@ export default function ZustandRoute() {
 		<>
 			<CountSpan />
 			<div>
-				<p style={{ maxWidth: "75ch" }}>
+				<p className="description">
 					This example is on how using zustand could optimize your react application if you use global state
 					across your webapp. Try changing the count and see where the renders are being occured
 				</p>
 			</div>
-			<div
-				style={{
-					display: "flex",
-					gap: "0.5rem",
-					alignSelf: "center",
-				}}
-			>
+			<div className="count-controls">
 				<CountIncrement />
 				<CountDecrement />
 			</div>
@@ -38,7 +32,7 @@ export default function ZustandRoute() {
 
 function CountSpan() {
 	const count = useCounterStore((x) => x.count);
-	return <span style={{ fontSize: "1.75em" }}>Count: {count}</span>;
+	return <span className="count-span">Count: {count}</span>;
 }
 
 function CountIncrement() {

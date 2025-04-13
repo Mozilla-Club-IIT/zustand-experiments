@@ -84,3 +84,46 @@ button:disabled {
 	flex-direction: column;
 	gap: 1rem;
 }
+
+/* Styles extracted from the provided JSX */
+
+.description {
+	max-width: 75ch;
+}
+
+.count-controls {
+	display: flex;
+	gap: 0.5rem;
+	align-self: center;
+}
+
+.count-span {
+	font-size: 1.75em;
+}
+
+.footer-linklist {
+	display: inline;
+	text-align: start;
+}
+
+.footer-linklist > * {
+	margin-right: 0.5rem;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.footer-linklist a {
+	display: inline-flex;
+	justify-items: start;
+	align-items: center;
+	gap: 0.15rem;
+	height: 1.25em;
+}
+
+.footer-linklist .icon {
+	color: white;
+	width: 1.25em;
+	height: 1.25em;
+}

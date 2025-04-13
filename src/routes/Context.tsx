@@ -34,18 +34,12 @@ export default function ContextRoute() {
 		<CounterProvider>
 			<CountSpan />
 			<div>
-				<p style={{ maxWidth: "75ch" }}>
+				<p className="description">
 					This example shows how using React Context and useState could manage global state across your
 					webapp. Try changing the count and see where the renders occur.
 				</p>
 			</div>
-			<div
-				style={{
-					display: "flex",
-					gap: "0.5rem",
-					alignSelf: "center",
-				}}
-			>
+			<div className="count-controls">
 				<CountIncrement />
 				<CountDecrement />
 			</div>
@@ -55,7 +49,7 @@ export default function ContextRoute() {
 
 function CountSpan() {
 	const { count } = useCounter();
-	return <span style={{ fontSize: "1.75em" }}>Count: {count}</span>;
+	return <span className="count-span">Count: {count}</span>;
 }
 
 function CountIncrement() {

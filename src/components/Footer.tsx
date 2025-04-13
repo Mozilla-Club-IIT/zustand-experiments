@@ -1,4 +1,7 @@
-import { Link } from "react-router";
+import { Link } from "wouter";
+
+import BxFile from "./icons/File";
+import BxlGithub from "./icons/Github";
 
 export default function Footer() {
 	return (
@@ -30,6 +33,17 @@ export default function Footer() {
 			<span style={{ fontSize: "0.9em", textAlign: "start", color: "var(--text-muted)" }}>
 				Render view using react-scan
 			</span>
+
+			<div className="footer-linklist">
+				<a href="https://github.com/Mozilla-Club-IIT/zustand-experiments" target="_blank">
+					<BxlGithub className="icon" />
+					Source
+				</a>
+				<a href="https://mozilla-iit.org" target="_blank">
+					<BxFile className="icon" />
+					Article
+				</a>
+			</div>
 		</footer>
 	);
 }
