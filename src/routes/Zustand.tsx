@@ -46,3 +46,8 @@ function CountDecrement() {
 
 	return <button type="button" onClick={decrement} disabled={disabled}>- Decrement</button>;
 }
+
+ZustandRoute.displayName = "ZustandRoute";
+CountSpan.displayName = "CountSpan";
+CountIncrement.displayName = "CountIncrement";
+CountDecrement.displayName = "CountDecrement";

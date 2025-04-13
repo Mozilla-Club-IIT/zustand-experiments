@@ -67,3 +67,9 @@ function CountDecrement() {
 		</button>
 	);
 }
+
+CounterProvider.displayName = "CounterProvider";
+ContextRoute.displayName = "ContextRoute";
+CountSpan.displayName = "CountSpan";
+CountIncrement.displayName = "CountIncrement";
+CountDecrement.displayName = "CountDecrement";

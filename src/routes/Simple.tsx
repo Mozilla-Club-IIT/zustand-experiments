@@ -88,3 +88,8 @@ function CountDecrement() {
 
 	return <button type="button" onClick={decrement} disabled={disabled}>- Decrement</button>;
 }
+
+SimpleRoute.displayName = "SimpleRoute";
+CountSpan.displayName = "CountSpan";
+CountIncrement.displayName = "CountIncrement";
+CountDecrement.displayName = "CountDecrement";
