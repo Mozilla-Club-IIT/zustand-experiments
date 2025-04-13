@@ -39,7 +39,10 @@ export default function Footer() {
 					<BxlGithub className="icon" />
 					Source
 				</a>
-				<a href="https://mozilla-iit.org" target="_blank">
+				<a
+					href="https://mozilla-iit.org/blogs/zustand-the-bear-necessities-for-reactive-state-management"
+					target="_blank"
+				>
 					<BxFile className="icon" />
 					Article
 				</a>
